@@ -8,7 +8,7 @@ import static java.lang.System.out;
 import static java.lang.System.setOut;
 
 // 3 - Classe
-public class Medidas {
+public abstract class Medidas {
 
     // 3.1 - Atributos
     static Scanner entrada = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Medidas {
         String opcao = "";
         double area = 0; // receber o resultado dos calculos de areas
 
-        while(!opcao.toUpperCase().equals("S")) {
+        //while(!opcao.toUpperCase().equals("S")) {
 
             System.out.println("Escolha o Calculo Desejado");
             System.out.println("(1) - Area do Quadrado");
@@ -69,7 +69,7 @@ public class Medidas {
             if (area > 0) {
                 System.out.println("A area e de " + area + "m²");
             }
-        }
+        //}
     }
 
     public static double calcularAreaDoQuadrado() { // não ter o "void" quer dizer que não queremos um retorno
@@ -154,7 +154,7 @@ public class Medidas {
                 int num1 = 0;
                 int num2 = 1;
 
-                out.print("Sequencia de Fibonacci: 1 ");
+                System.out.print("Sequencia de Fibonacci: 1 ");
                 for (byte i = 2; i <= numero; i++){
                     int fib = num1 + num2;
                     System.out.print(fib + " ");
@@ -195,5 +195,6 @@ public class Medidas {
             System.out.println("Por hoje e so pessoal!!");
         }
     }
+
 
 }
